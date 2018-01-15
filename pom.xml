@@ -6,7 +6,7 @@
     <groupId>com.deyi</groupId>
     <artifactId>stcokshow</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>stcok-show</name>
     <description>Demo project for QADL API</description>
