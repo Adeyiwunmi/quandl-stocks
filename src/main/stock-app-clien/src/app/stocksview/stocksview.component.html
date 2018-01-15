@@ -1,0 +1,28 @@
+<div class="center-block">
+
+
+  <div class="card" style="padding-left: 30%; padding-top: 5%;">
+    <div class="form-group col-sm-3">
+      <input type="text" class="form-control" [(ngModel)]="searchQuery" placeholder="Enter Search query here " />
+    </div>
+
+    <button class="btn btn-primary" (click)="getStockValues()">Search</button>
+  </div>
+
+  <div class="center-block" *ngIf="validResult" style="padding-top:5%;padding-left:30%;">
+    <div class="table">
+      <table class="table" *ngFor="let data of stockPriceData">
+        <tbody>
+          <tr>
+            <span class="text-success">{{getTimeDisplay(data[0])}} :</span>
+            <span class="text-primary">{{data[1] | currency:'USD' }} </span>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div *ngIf="noDataFound" style="padding-left:30%;">
+    <h3 class="text-danger">The are no results for the quandl code entered </h3>
+  </div>
+</div>
