@@ -7913,3 +7913,5 @@ org.springframework.web.client.HttpClientErrorException: 400 Bad Request
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
 
+2018-01-15 08:30:19.336  INFO 14241 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@473f7cf5: startup date [Mon Jan 15 00:10:12 WAT 2018]; root of context hierarchy
+2018-01-15 08:30:19.352  INFO 14241 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
